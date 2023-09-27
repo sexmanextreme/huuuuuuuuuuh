@@ -6,10 +6,34 @@ def sex(i):
         what = " med antilop"
     
     print("sex" +what)
-    
+
+
+txt = "me and the birds or cards"
+
+
+def txt_Extract(txt):
+    d = {}
+    l = txt.split()
+    for x in range(1, len(txt.split())+1):
+        for i in range(1, len(txt.split())+1):
+            h =l[i]
+        d["txt{0}".format(x)] = h
+        
+    print(d)
+      
+
+def gate_Not(ope):
+    return not ope
+
+def gate_And():
+    pass
+
+
+txt_Extract(txt)
+
+"""
 i = True
 
-guh=0
 while(True):
     
     sex(i)
@@ -19,5 +43,5 @@ while(True):
     else:
         i = True
     
-    guh+=1
-    
+"""
+
