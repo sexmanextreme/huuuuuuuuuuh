@@ -3,33 +3,38 @@ def sex(i):
     if i is True:
         what = " med vad?"
     else:
-        what = " med antilop"
-    
+        what = " med antilop" 
     print("sex" +what)
 
 
-txt = "me and the birds or cards"
+txt = "me and the birds or not cards"
 
-
+#splits the string by words and inserts it inside a dictionary
+d = {}
+tl = len(txt.split())
 def txt_Extract(txt):
-    d = {}
-    l = txt.split()
-    for x in range(1, len(txt.split())+1):
-        for i in range(1, len(txt.split())+1):
-            h =l[i]
-        d["txt{0}".format(x)] = h
-        
-    print(d)
-      
 
-def gate_Not(ope):
-    return not ope
+    l = txt.split()
+    for x in range(0,tl):    
+        d["txt{0}".format(x)] = l[x]
+
+    print(d)
+
+
+def gate_Not(d):
+    pr = txt.index("not")
+    print(pr)
+
+    
 
 def gate_And():
     pass
 
+def gate_Or():
+    pass
 
-txt_Extract(txt)
+gate_Not(d)
+#txt_Extract(txt)
 
 """
 i = True
