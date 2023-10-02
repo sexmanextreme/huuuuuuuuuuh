@@ -7,7 +7,7 @@ def sex(i):
     print("sex" +what)
 
 
-txt = "me and the birds or not cards"
+txt = "me aNd the birds or NOT cards".casefold()
 
 #splits the string by words and inserts it inside a dictionary
 d = {}
@@ -16,14 +16,23 @@ def txt_Extract(txt):
 
     l = txt.split()
     for x in range(0,tl):    
-        d["txt{0}".format(x)] = l[x]
+        if l[x] == "not":
+            d["not{0}".format(x)] = l[x]
+        elif l[x] == "or":
+            d["or{0}".format(x)] = l[x]
+        elif l[x] == "and":
+            d["and{0}".format(x)] = l[x]
+        else:
+            d["txt{0}".format(x)] = l[x]
 
     print(d)
 
 
 def gate_Not(d):
-    pr = txt.index("not")
-    print(pr)
+    pr = txt[txt.index("not"),3]
+    
+    
+    #print(pr)
 
     
 
@@ -33,8 +42,8 @@ def gate_And():
 def gate_Or():
     pass
 
-gate_Not(d)
-#txt_Extract(txt)
+#gate_Not(d)
+txt_Extract(txt)
 
 """
 i = True
