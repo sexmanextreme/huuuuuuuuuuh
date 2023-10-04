@@ -26,10 +26,14 @@ def txt_Extract(txt):
             d["txt{0}".format(x)] = l[x]
 
     print(d)
-
+    for x in d.keys():
+        print(x)
 
 def gate_Not(d):
-    pr = txt[txt.index("not"),3]
+    for x in d.keys():
+        print(x)
+        
+    #pr = txt[txt.index("not"),3]
     
     
     #print(pr)
