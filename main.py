@@ -6,6 +6,7 @@ def sex(i):
         what = " med antilop" 
     print("sex" +what)
 
+s0 = Gate()
 
 txt = "me aNd the birds or NOT cards".casefold()
 
