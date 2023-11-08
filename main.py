@@ -1,4 +1,4 @@
-from Gate import Gate
+#from Gate import Gate
 
 
 def sex(i):
@@ -9,25 +9,25 @@ def sex(i):
         what = " med antilop" 
     print("sex" +what)
 
-class MAIN():
+class main():
 
     txt = "me aNd the birds or NOT cards".casefold()
 
     #splits the string by words and inserts it inside a dictionary
     d = {}
-    tl = len(txt.split())
-    def txt_Extract(txt):
+    ls = len(txt.split())
+    def ops(txt,d,ls):
 
-        l = txt.split()
-        for x in range(0,tl):    
-            if l[x] == "not":
-                d["not{0}".format(x)] = l[x]
-            elif l[x] == "or":
-                d["or{0}".format(x)] = l[x]
-            elif l[x] == "and":
-                d["and{0}".format(x)] = l[x]
+        tl = txt.split()
+        for x in range(0,):    
+            if tl[x] == "not":
+                d["not{0}".format(x)] = tl[x]
+            elif tl[x] == "or":
+                d["or{0}".format(x)] = tl[x]
+            elif tl[x] == "and":
+                d["and{0}".format(x)] = tl[x]
             else:
-                d["txt{0}".format(x)] = l[x]
+                d["txt{0}".format(x)] = tl[x]
 
         print(d)
 
@@ -50,7 +50,7 @@ class MAIN():
         pass
 
     #gate_Not(d)
-    txt_Extract(txt)
+    ops(txt,d,ls)
 
     """
     i = True

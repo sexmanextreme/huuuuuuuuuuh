@@ -1,6 +1,6 @@
-from main import MAIN, abstractmethod
+from Operand import ops, abstractmethod
 
-class Gate(MAIN):
+class Gate(ops):
 
     @abstractmethod
     def sexmedantilop(self): 
